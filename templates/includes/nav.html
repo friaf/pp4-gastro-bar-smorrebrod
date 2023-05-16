@@ -14,24 +14,24 @@
                     <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'menu' %}">Menu</a>
+                    <a class="nav-link" href="">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'booking' %}">Booking</a>
+                    <a class="nav-link" href="">Booking</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Photos</a>
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url '' %}">Logout</a>
+                    <a class="nav-link" href="">Logout</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url '' %}">Register</a>
+                    <a class="nav-link" href="">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url '' %}">Login</a>
+                    <a class="nav-link" href="">Login</a>
                 </li>
                 {% endif %}
             </ul>

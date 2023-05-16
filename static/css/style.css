@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ruda:wght@500&display=swap');
+
+body {
+    background-color: #2d3142;
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ruda', sans-serif;
+
+}
+
+h1 h2 h3 h4 h5 {
+    font-family: 'Ruda', sans-serif;
+}
+
+
+
+/* navbar */
+
+.c-white {
+    color: #ffffff;
+    letter-spacing: 0.08em;
+}
+
+.c-white:hover {
+    color: #ef8354;
+}
+
+.navbar-dark .navbar-nav .nav-item  .nav-link {
+    color: #ffffff;
+    letter-spacing: 0.05em;
+} 
+
+.navbar-dark .navbar-nav .nav-item  .nav-link:hover {
+    color: #ef8354;
+}
+
+
+
+
+/* hero */
+
+.bg-image {
+    background-image: url("/static/images/hero.jpeg");
+    position: relative;
+    display: flex;
+    height: 600px;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;   
+ 
+}
+
+.bg-image::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(53, 51, 60, 0.7);
+}
+
+
+
+/* footer */
+
+.container-fluid {
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    font-size: small;
+}
+
+.container-fluid .color {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container-fluid .color:hover {
+    color: #ef8354;
+    text-decoration: none;
+}
+
+.container-fluid .links-color-icon {
+    color: #ffffff;
+    font-size: large;
+}
+
+.container-fluid .links-color-icon:hover {
+    color: #ef8354;
+}
+
+.link {
+    color: #ef8354;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #ef8354;
+
+}
+
+#map {
+    min-height: 200px;
+ 
+}
