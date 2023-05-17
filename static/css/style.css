@@ -64,6 +64,22 @@ h1 h2 h3 h4 h5 {
     background-color: rgba(53, 51, 60, 0.7);
 }
 
+.hero-text {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn-danger {
+    background-color: #cf5522  ;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #b53b07;
+    border: none;
+}
+
 
 
 /* footer */
@@ -106,5 +122,4 @@ h1 h2 h3 h4 h5 {
 
 #map {
     min-height: 200px;
- 
 }
