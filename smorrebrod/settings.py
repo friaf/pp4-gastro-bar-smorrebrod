@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'crispy_forms',
+    'rangefilter',
+    'tempus_dominus',
     'home',
     'menu',
     'booking',
