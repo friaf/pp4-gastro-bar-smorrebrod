@@ -25,12 +25,6 @@ class BookingTableForm(forms.ModelForm):
 
 
 def __init__(self, *args, **kwargs):
-    """
-    Add class, required field and DateTime picker
-    to third field.
-    """
     super().__init__(*args, **kwargs)
-    self.fields['booking_date'].widget.attrs['class'] = 'form-control datepicker-input'
-    self.fields['booking_date'].widget = DatePicker()
-    self.fields['rbooking_date'].widget.attrs['required'] = 'required'
-    self.fields['phone_number'].widget.attrs['required'] = 'required'
+    self.fields['booking_date'].widget.attrs['class'] = 'datepicker'
+    self.fields['booking_date'].widget.attrs['autocomplete'] = 'off'

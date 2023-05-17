@@ -120,6 +120,32 @@ h1 h2 h3 h4 h5 {
 
 }
 
+
+
+.jumbotron {
+    color: white;
+    background-image: url("/static/images/5.jpeg");
+    position: relative;
+    display: flex;
+    height: 600px;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center; 
+}
+
+.jumbotron::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(53, 51, 60, 0.7);
+}
+
 #map {
     min-height: 200px;
 }
