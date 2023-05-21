@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pp4-gastro-bar-smorrebrod.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['pp4-gastro-bar-smorrebrod.herokuapp.com','8000-friaf-pp4gastrobarsmor-j6b73msoimr.ws-eu97.gitpod.io', 'localhost']
 
 
 # Application definition
@@ -64,6 +64,7 @@ LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 
 
 MIDDLEWARE = [

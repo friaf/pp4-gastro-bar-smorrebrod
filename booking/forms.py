@@ -1,30 +1,28 @@
 from django import forms
 from datetime import datetime
-from tempus_dominus.widgets import DatePicker
-from .models import Booking
+from django.core.exceptions import ValidationError
+from .widget import DatePickerInput, TimePickerInput
+from .models import Booking, Table
 
 
 class BookingTableForm(forms.ModelForm):
     """ Create form from Model """
     class Meta:
         model = Booking
+        
         fields = [
-            'phone_number',
-            'booking_time',
-            'booking_date',
-            'party_size',
             'name',
+            'phone_number',
+            'party_size',
+            'booking_time',
+            'booking_date',  
         ]
+        widgets = {
+            'booking_date': DatePickerInput(),
+        }   
         labels = {
-            'name': 'Name',
-            'phone_number': 'Phone Number',
-            'booking_time': 'Time',
+            'booking_name': 'Name',
+            'number_of_guests': 'Number Of Guests',
             'booking_date': 'Date',
-            'party_size': 'Party Size',
+            'booking_time': 'Time',
         }
-
-
-def __init__(self, *args, **kwargs):
-    super().__init__(*args, **kwargs)
-    self.fields['booking_date'].widget.attrs['class'] = 'datepicker'
-    self.fields['booking_date'].widget.attrs['autocomplete'] = 'off'

@@ -10,9 +10,9 @@
         <thead>
             <tr>
                 <th scope="col"></th>
-                <th scope="col">Booking id</th>
                 <th scope="col">Customer name</th>
-                <th scope="col">Reservation date and time</th>
+                <th scope="col">Reservation date</th>
+                <th scope="col">Reservation time</th>
                 <th scope="col">Phone number</th>
                 <th scope="col">Number of guests</th>
             </tr>
@@ -21,9 +21,9 @@
             {% for booking in bookings %}
             <tr>
                 <th scope="row"></th>
-                <td>{{ booking.id }}</td>
                 <td>{{ booking.name }}</td>
                 <td>{{ booking.booking_date }}</td>
+                <td>{{ booking.get_booking_time_display }}</td>
                 <td>{{ booking.phone_number }}</td>
                 <td>{{ booking.party_size}}</td>
             

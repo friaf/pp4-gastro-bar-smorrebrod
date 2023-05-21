@@ -1,3 +1,84 @@
+# Smorrebrod Gastro-Bar
+
+This is a fictional Gastro-Bar based in Cork city, Ireland.
+Website is a booking management system, where customers can easily make bookings, edit and delete them. Staff can view customers bookings and prepare tables for specific time and date.
+
+## Wireframes Plane
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Steps for deployment:
+- Fork or clone this repository
+- Create a new heroku app
+- Set the buildbacks to Python and NodeJS in that order
+- Set the buildbacks to PORT and 8000
+- Link the Heroku app to the repository
+- Click on --> Deploy
+
+
+## Credits
+
+- Code institute for the deployment terminal
+- My mother for inspiration and income data
+- Walk through project3 "Love Sandwiches" for idea
+- Google Sheets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome friaf,

@@ -1,4 +1,6 @@
 from django.db import models
+from django.core.exceptions import ValidationError
+from django.utils import timezone
 from django.contrib.auth.models import User
 
 
@@ -37,13 +39,13 @@ class Booking(models.Model):
     phone_number = models.CharField(max_length=20)
     booking_time = models.IntegerField(choices=time_slots, default=1)
     party_size = models.IntegerField(default=2)
+   
     booking_date = models.DateField()
     booking_table = models.ForeignKey(
         Table, on_delete=models.CASCADE,
         related_name="booked_table",
         null=True,
-        blank=True
-        
+        blank=True  
     )
 
     def __str__(self):
