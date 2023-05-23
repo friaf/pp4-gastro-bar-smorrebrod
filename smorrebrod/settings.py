@@ -28,9 +28,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['pp4-gastro-bar-smorrebrod.herokuapp.com','8000-friaf-pp4gastrobarsmor-j6b73msoimr.ws-eu97.gitpod.io', 'localhost']
+ALLOWED_HOSTS = ['pp4-gastro-bar-smorrebrod.herokuapp.com', 'localhost']
 
 
 # Application definition
