@@ -19,6 +19,7 @@ def add_booking(request):
             booking.customer = request.user
             booking.save()
             messages.success(request, 'Booking is successful.')
+            return redirect('viewbooking')
         else:
             messages.error(request, 'Booking date must be in the future.')
     form = BookingTableForm()
@@ -43,3 +44,30 @@ def view_booking(request):
         'bookings': bookings
         }
     return render(request, 'view_booking.html', context)
+
+
+@login_required
+def edit_booking(request, pk):
+    booking = Booking.objects.get(id=pk)
+    form = BookingTableForm(instance=booking)
+    if request.method == 'POST':
+        form = BookingTableForm(request.POST, instance)
+        if form.is_valid():
+            booking = form.save()
+            booking.customer = request.user
+            booking.save()
+            messages.success(request, 'Booking is successful.')
+            return redirect('viewbooking')
+    context = {'form': form}
+    return render(request, 'booking.html', context)
+
+
+@login_required
+def delete_booking(request, pk):
+    booking = Booking.objects.get(id=pk)
+    if request.method == 'POST':
+        booking.delete()
+        return redirect('viewbooking')   
+    context = {'booking': booking}
+    return render(request, 'delete_booking.html', context)
+

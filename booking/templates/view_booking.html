@@ -26,6 +26,15 @@
                 <td>{{ booking.get_booking_time_display }}</td>
                 <td>{{ booking.phone_number }}</td>
                 <td>{{ booking.party_size}}</td>
+                <td>
+                    <div class="intro-button mx-auto">
+                        <a class="btn btn-primary btn-xl" href="{% url 'editbooking' booking.id %}">Edit</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="intro-button mx-auto"><a class="btn btn-primary btn-danger btn-xl"
+                            href="{% url 'deletebooking' booking.id %}">Delete Booking</a></div>
+                </td>
             
             </tr>
         </tbody>

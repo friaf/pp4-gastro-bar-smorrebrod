@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from booking.views import add_booking, view_booking
+from booking.views import *
 
 urlpatterns = [
     path(
@@ -10,5 +10,13 @@ urlpatterns = [
     path(
        'viewbooking/', views.view_booking,
        name='viewbooking'
+    ),
+    path(
+        'editbooking/<str:pk>/', views.edit_booking,
+        name='editbooking'
+    ),
+    path(
+        'deletebooking/<str:pk>/', views.delete_booking,
+        name='deletebooking'
     ),
 ]

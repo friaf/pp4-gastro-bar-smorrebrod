@@ -1,6 +1,5 @@
 from django import forms
-from datetime import datetime
-from tempus_dominus.widgets import DatePicker
+from .widget import DatePickerInput
 from .models import Booking
 
 
@@ -15,6 +14,9 @@ class BookingTableForm(forms.ModelForm):
             'party_size',
             'name',
         ]
+        widgets = {
+            'booking_date': DatePickerInput(),
+        }
         labels = {
             'name': 'Name',
             'phone_number': 'Phone Number',

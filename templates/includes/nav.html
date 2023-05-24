@@ -19,9 +19,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'menu' %}">Menu</a>
                 </li>
+
+                {% if user.is_authenticated %}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        data-bs-toggle="dropdown" data-toggle="dropdown" aria-expanded="false">
                         Bookings
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -29,6 +31,7 @@
                         <li><a class="dropdown-item" aria-current="page" href="{% url 'addbooking' %}">New Booking</a></li>                       
                     </ul>
                 </li>
+                {% endif %}
                 {% if user.is_authenticated %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
@@ -46,5 +49,8 @@
     </nav>
 </div>
 </header>
+
+
+
 
 
