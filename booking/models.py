@@ -29,8 +29,8 @@ class Table(models.Model):
 class Booking(models.Model):
     """ Creating Booking Model """
     customer = models.ForeignKey(
-        User, 
-        on_delete=models.CASCADE, 
+        User,
+        on_delete=models.CASCADE,
         related_name='booking_guest',
         null=True,
         blank=True
@@ -44,7 +44,7 @@ class Booking(models.Model):
         Table, on_delete=models.CASCADE,
         related_name="booked_table",
         null=True,
-        blank=True  
+        blank=True 
     )
 
     def __str__(self):

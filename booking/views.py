@@ -61,7 +61,6 @@ def delete_booking(request, pk):
     if request.method == 'POST':
         booking.delete()
         messages.success(request, 'Booking is deleted successfuly.')
-        return redirect('viewbooking')   
+        return redirect('viewbooking')
     context = {'booking': booking}
     return render(request, 'delete_booking.html', context)
-

@@ -15,7 +15,6 @@ class BookingTableForm(forms.ModelForm):
             'party_size',
             'booking_time',
             'booking_date',
-          
         ]
         widgets = {
             'booking_date': DatePickerInput(),
