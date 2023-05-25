@@ -39,7 +39,6 @@ class Booking(models.Model):
     phone_number = models.CharField(max_length=20)
     booking_time = models.IntegerField(choices=time_slots, default=1)
     party_size = models.IntegerField(default=2)
-   
     booking_date = models.DateField()
     booking_table = models.ForeignKey(
         Table, on_delete=models.CASCADE,

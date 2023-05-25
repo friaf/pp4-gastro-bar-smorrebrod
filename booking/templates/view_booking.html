@@ -4,17 +4,21 @@
 {% load crispy_forms_tags %}
 
 
-
+<div class="delete-container">
 <div class="table-responsive-sm">
     <table class="table table-hover table-dark">
         <thead>
             <tr>
                 <th scope="col"></th>
-                <th scope="col">Customer name</th>
-                <th scope="col">Reservation date</th>
-                <th scope="col">Reservation time</th>
+                <th scope="col">Name</th>
                 <th scope="col">Phone number</th>
-                <th scope="col">Number of guests</th>
+                <th scope="col">Party size</th>
+                <th scope="col">Time</th>
+                <th scope="col">Date</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+
+
             </tr>
         </thead>
         <tbody>
@@ -22,18 +26,18 @@
             <tr>
                 <th scope="row"></th>
                 <td>{{ booking.name }}</td>
-                <td>{{ booking.booking_date }}</td>
-                <td>{{ booking.get_booking_time_display }}</td>
                 <td>{{ booking.phone_number }}</td>
                 <td>{{ booking.party_size}}</td>
+                <td>{{ booking.get_booking_time_display }}</td>
+                <td>{{ booking.booking_date }}</td>
                 <td>
                     <div class="intro-button mx-auto">
-                        <a class="btn btn-primary btn-xl" href="{% url 'editbooking' booking.id %}">Edit</a>
+                        <a class="btn btn-success btn-xl" href="{% url 'editbooking' booking.id %}">Edit</a>
                     </div>
                 </td>
                 <td>
                     <div class="intro-button mx-auto"><a class="btn btn-primary btn-danger btn-xl"
-                            href="{% url 'deletebooking' booking.id %}">Delete Booking</a></div>
+                            href="{% url 'deletebooking' booking.id %}">Delete</a></div>
                 </td>
             
             </tr>
@@ -41,5 +45,6 @@
         {% endfor %}
         {% csrf_token %}
     </table>
+</div>
 </div>
 {% endblock content %}

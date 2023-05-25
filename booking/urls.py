@@ -18,5 +18,5 @@ urlpatterns = [
     path(
         'deletebooking/<str:pk>/', views.delete_booking,
         name='deletebooking'
-    ),
+    ),   
 ]

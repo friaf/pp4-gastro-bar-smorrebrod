@@ -152,7 +152,7 @@ h1 h2 h3 h4 h5 {
 }
 
 .carousel {
-    background-image: url("/static/images/table1.jpg");
+    background-image: url("/static/images/table1.jpeg");
     position: relative;
     display: flex;
     height: 600px;
@@ -174,4 +174,13 @@ h1 h2 h3 h4 h5 {
     text-decoration: none;
 }
 
+.delete-container{
+    height: 500px;
+    background-color: #212529;
+    overflow-y: scroll;
+}
+
+.table {
+    height: 450px;
+}
 

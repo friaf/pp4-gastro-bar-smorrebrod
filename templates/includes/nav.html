@@ -19,7 +19,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'menu' %}">Menu</a>
                 </li>
-
+                
                 {% if user.is_authenticated %}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -30,6 +30,10 @@
                         <li><a class="dropdown-item" aria-current="page" href="{% url 'viewbooking'%}">Manage Bookings</a></li>
                         <li><a class="dropdown-item" aria-current="page" href="{% url 'addbooking' %}">New Booking</a></li>                       
                     </ul>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'account_signup' %}">Booking</a>
                 </li>
                 {% endif %}
                 {% if user.is_authenticated %}

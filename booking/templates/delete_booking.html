@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-4">
+            <h3>Delete Booking</h3>
+            <p>Are you sure you want to delete booking?</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mt-3 offset-md-4">
+            <form method="post" action="{% url 'deletebooking' booking.id %}">
+                {% csrf_token %}
+                <a href="{% url 'viewbooking' %}" class="btn btn-danger col-md-2">No</a>
+                <input class="btn btn-danger col-md-2" type="submit" name="yes"/>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
