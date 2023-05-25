@@ -26,3 +26,6 @@ urlpatterns = [
     path('addbooking/', include('booking.urls')),
     path('menu/', include('menu.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
+handler404 = 'booking.views.error_404_view'
