@@ -1,14 +1,14 @@
 {% extends "base.html" %}
-
-
+{% load static %}
 
 {% block content %}
-<div class="jumbotron">
-    <h1 class="display-4">Page Not Found</h1>
-    <p class="lead">Oops, this page does not exist.</p>
-    <hr class="my-4">
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="{% url 'home' %}" role="button">Go to Home Page</a>
-    </p>
-  </div>
+<div class="cover" style="height:650px;">
+<div class="bg-image col-md-12 align-items-center justify-content-center" style="background-image: url('{% static 'images/5.jpeg' %}')">
+    <div class="hero-text d-flex-center">
+        <h3>Oops, this page does not exist!</h3>
+        <a class="btn btn-danger btn-sm" href="{% url 'home' %}" type="button">Back to Home Page</a>
+    </div>
+</div>
+</div>
 {%endblock%}
+

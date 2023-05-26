@@ -46,7 +46,7 @@ h1 h2 h3 h4 h5 {
 /* hero */
 
 .bg-image {
-    background-image: url("/static/images/hero.jpeg");
+    /*background-image: url("/static/images/hero.jpeg");*/
     position: relative;
     display: flex;
     height: 650px;
@@ -129,7 +129,7 @@ h1 h2 h3 h4 h5 {
 
 .jumbotron {
     color: white;
-    background-image: url("/static/images/5.jpeg");
+    /*background-image: url("/static/images/5.jpeg");*/
     position: relative;
     display: flex;
     height: 650px;
@@ -152,7 +152,7 @@ h1 h2 h3 h4 h5 {
 }
 
 .carousel {
-    background-image: url("/static/images/table1.jpeg");
+    /*background-image: url("/static/images/table1.jpeg");*/
     position: relative;
     display: flex;
     height: 600px;
