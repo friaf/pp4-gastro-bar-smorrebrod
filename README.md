@@ -1,9 +1,26 @@
+I have submited my project while its not fully finished, I understand this work is not going to be gradet and i will be finishing all the points bellow to re-submiting it.
+
+Coding is the most difficult thing i have ever done but i enjoy every second of it!
+
+Add to site:
+- I need to add validation for double booking, as for now tables can be booked for the same time by many users.
+- Add responsivness to menu images
+- Responsivness to couple of buttons
+- error page 505 
+- Ability for staff to view and edit menu items and bookings from the website, not admin panel
+
+Add to Readme file:
+- tests
+- database diagram
+- Screenshots for my website with description
+- Responsive view (responsive websites didnt connect to my site, i dont know why as deployment was successful)
+- Credits to
+
+
 # Smorrebrod Gastro-Bar (Project 4)
 
-![](docs/readme_images/responsive_color/home_big.png)
-![](docs/readme_images/responsive_color/booking_big.png)
 ![](docs/readme_images/responsive_color/home_small.png)
-![](docs/readme_images/responsive_color/menu_small.png)
+
 
 
 This is a fictional Gastro-Bar based in Cork city, Ireland.
@@ -65,9 +82,7 @@ The Kanban board was created using github projects and can be located <a href="h
 - Django==3.2.19
 - django-admin-rangefilter==0.10.0
 - django-allauth==0.54.0
-- django-bootstrap-datepicker-plus==5.0.3
 - django-crispy-forms==1.14.0
-- django-tempus-dominus==5.1.2.17
 - gunicorn==20.1.0
 - oauthlib==3.2.2
 - psycopg2==2.9.6
@@ -116,5 +131,7 @@ git push - This command was used to push all committed code to the remote reposi
 The app should now be deployed.
 
 The live link can be found here: <a href="https://pp4-gastro-bar-smorrebrod.herokuapp.com/" target="_blank">Live Site</a>
+
+
 
 
